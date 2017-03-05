@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.core.ddf.NoBroker.testcases.selectplanTest">
+        <methods>
+          <include name="repoquit"/>
+          <include name="init"/>
+          <include name="search"/>
+          <include name="quit"/>
+          <include name="selectPlan"/>
+        </methods>
+      </class> <!-- com.core.ddf.NoBroker.testcases.selectplanTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

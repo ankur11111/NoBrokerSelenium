@@ -1,0 +1,17 @@
+<suite name="SuiteName">
+	
+	<test name="selectplanTest" allow-return-values="true">
+		<classes>
+			<class name="com.core.ddf.NoBroker.testcases.selectplanTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Shortlist" allow-return-values="true">
+		<classes>
+			<class name="com.core.ddf.NoBroker.testcases.Shortlist" />
+		</classes>
+	</test>
+		
+</suite>
+
