@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.637 sec
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 117.368 sec <<< FAILURE!
+search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 56.63 sec  <<< FAILURE!
+java.lang.AssertionError: Password aa is wrong
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:169)
+	at com.core.ddf.NoBroker.BaseTest.VerifyPassword(BaseTest.java:358)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:51)
+
