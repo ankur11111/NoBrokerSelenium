@@ -42,6 +42,7 @@ public class selectplanTest extends BaseTest {
 		type("contactnumber_xpath",data.get("number"));
 		VerifyNumber(data.get("number"));
 		click("nextbutton1_xpath");
+		wait(2);
 		click("radiobutton_xpath");
 		//System.out.println("-->>"+driver.findElement(By.xpath("//div[@class='errorMsgText']")).getAttribute("innerText"));
 		type("password_xpath",data.get("password"));
@@ -49,7 +50,8 @@ public class selectplanTest extends BaseTest {
 		click("nextbutton2_xpath");
 		wait(2);
 		VerifyPassword(data.get("password"));
-		System.out.println("-->>"+driver.findElement(By.xpath("//*[@id='checkMobileNumber']/div[2]/fieldset[3]/div/div[1]")).getText());
+		wait(2);
+		//System.out.println("-->>"+driver.findElement(By.xpath("//*[@id='checkMobileNumber']/div[2]/fieldset[3]/div/div[1]")).getText());
 		click("paynowbutton_xpath");
 		waitForPageToLoad();
 		if(isElementPresent("orderdetails_xpath")){

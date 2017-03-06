@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +25,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -72,11 +74,12 @@ public class BaseTest
 			if(bType.equals("Mozilla"))
 				driver=new FirefoxDriver();
 			else if(bType.equals("Chrome")){
+				System.out.println(prop.getProperty("chromedriver_exe"));
 				System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver_exe"));
 				driver=new ChromeDriver();
 			}
 			else if (bType.equals("IE")){
-				System.setProperty("webdriver.chrome.driver", prop.getProperty("iedriver_exe"));
+				System.setProperty("webdriver.ie.driver", prop.getProperty("iedriver_exe"));
 				driver= new InternetExplorerDriver();
 			}
 		
@@ -134,6 +137,15 @@ public class BaseTest
 			Assert.fail("Failed the test - "+ex.getMessage());
 		}
 		return e;
+	}
+	
+	
+	public void hoverandSelectDashboard(String main, String sub)
+	
+	{
+		Actions action = new Actions(driver);
+		WebElement mainMenu = driver.findElement(By.xpath(prop.getProperty(main)));
+		action.moveToElement(mainMenu).moveToElement(driver.findElement(By.xpath(prop.getProperty(sub)))).click().build().perform();
 	}
 	/***********************Validations***************************/
 	
@@ -264,7 +276,7 @@ public class BaseTest
 			test.log(LogStatus.INFO, "Search Failed");
 			
 		}
-		
+		wait(3);
 		String actualResult=getElement("savesearch_xpath").getText();
 		String expectedResult="Save Search";
 		
@@ -359,5 +371,7 @@ public class BaseTest
 			Assert.fail("Password "+password+" is wrong");
 		}
 	}
+	
+	
 	
 }

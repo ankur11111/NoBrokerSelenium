@@ -43,8 +43,7 @@ package com.core.ddf.NoBroker.testcases;
 			takeScreenShot();
 		    wait(2);
 		    click("shortlistbutton_xpath");
-		    wait(2);
-			takeScreenShot();
+		    takeScreenShot();
 		
 		}
 		
