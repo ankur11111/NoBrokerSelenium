@@ -1,12 +1,12 @@
 <suite name="SuiteName">
 	
-	<test name="Shortlist Test" allow-return-values="true">
+	<test name="ShortlistTest" allow-return-values="true">
 		<classes>
-			<class name="com.core.ddf.NoBroker.testcases.Shortlist" />
+			<class name="com.core.ddf.NoBroker.testcases.ShortlistTest" />
 		</classes>
 	</test>
 	
-	<test name="selectplan Test" allow-return-values="true">
+	<test name="selectplanTest" allow-return-values="true">
 		<classes>
 			<class name="com.core.ddf.NoBroker.testcases.selectplanTest" />
 		</classes>
