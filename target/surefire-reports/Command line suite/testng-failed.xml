@@ -7,9 +7,15 @@
         <methods>
           <include name="repoquit"/>
           <include name="init"/>
-          <include name="search" invocation-numbers="0"/>
+          <include name="search" invocation-numbers="2 4 5 7 8"/>
         </methods>
       </class> <!-- com.core.ddf.NoBroker.testcases.selectplanTest -->
+      <class name="com.core.ddf.NoBroker.testcases.ShortlistTest">
+        <methods>
+          <include name="init"/>
+          <include name="repoquit"/>
+        </methods>
+      </class> <!-- com.core.ddf.NoBroker.testcases.ShortlistTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

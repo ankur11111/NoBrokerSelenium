@@ -3,9 +3,7 @@ package com.core.ddf.NoBroker.testcases;
 import java.io.IOException;
 import java.util.Hashtable;
 
-import org.openqa.selenium.By;
 import org.testng.SkipException;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -15,7 +13,6 @@ import org.testng.asserts.SoftAssert;
 import com.core.ddf.NoBroker.BaseTest;
 import com.core.ddf.NoBroker.DataUtil;
 import com.core.ddf.NoBroker.Xls_Reader;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class selectplanTest extends BaseTest {
@@ -44,9 +41,11 @@ public class selectplanTest extends BaseTest {
 		click("nextbutton1_xpath");
 		wait(2);
 		click("radiobutton_xpath");
+		wait(2);
 		//System.out.println("-->>"+driver.findElement(By.xpath("//div[@class='errorMsgText']")).getAttribute("innerText"));
 		type("password_xpath",data.get("password"));
 		//VerifyPassword(data.get("password"));
+		wait(2);
 		click("nextbutton2_xpath");
 		wait(2);
 		VerifyPassword(data.get("password"));

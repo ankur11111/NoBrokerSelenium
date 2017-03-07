@@ -266,6 +266,7 @@ public class BaseTest
 		type("searchbox_xpath",Keywords);
 		wait(2);
 		click("firstsearchresult_xpath");
+		wait(2);
 		click("searchbutton_xpath");
 		waitForPageToLoad();
 		if(isElementPresent("savesearch_xpath")){

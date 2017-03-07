@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="1" name="TestSuite" time="110.679" errors="0" skipped="8">
+<testsuite tests="13" failures="5" name="TestSuite" time="419.985" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
@@ -27,9 +27,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\ankur\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8689763611355611414.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\ankur\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8356468068871528504.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_121/jre/bin/server;C:/Program Files/Java/jdk1.8.0_121/jre/bin;C:/Program Files/Java/jdk1.8.0_121/jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\ankur\AppData\Local\Microsoft\WindowsApps;C:\Users\ankur\AppData\Roaming\npm;C:\WINDOWS\system32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_121/jre/bin/server;C:/Program Files/Java/jdk1.8.0_121/jre/bin;C:/Program Files/Java/jdk1.8.0_121/jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\ankur\AppData\Local\Microsoft\WindowsApps;C:\Users\ankur\AppData\Roaming\npm;C:\WINDOWS\System32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,39 +61,85 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="54.049"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="56.63">
+  <testcase classname="com.core.ddf.NoBroker.testcases.ShortlistTest" name="addremoveShortlist" time="44.804"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.ShortlistTest" name="addremoveShortlist" time="42.271"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="38.346"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="37.607"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="33.299">
     <failure message="Password aa is wrong" type="java.lang.AssertionError">java.lang.AssertionError: Password aa is wrong
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:169)
-	at com.core.ddf.NoBroker.BaseTest.VerifyPassword(BaseTest.java:358)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.VerifyPassword(BaseTest.java:371)
 	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:51)
 </failure>
-    <system-out>https://www.nobroker.in/
+    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
+https://www.nobroker.in/
 </system-out>
+    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 42251
+Only local connections are allowed.
+</system-err>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="41.704"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="7.556">
+    <failure message="City not found Jaipur" type="java.lang.AssertionError">java.lang.AssertionError: City not found Jaipur
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.selectCity(BaseTest.java:247)
+	at com.core.ddf.NoBroker.BaseTest.searchResult(BaseTest.java:261)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:35)
+</failure>
+    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
+https://www.nobroker.in/
+</system-out>
+    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 4367
+Only local connections are allowed.
+</system-err>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="25.929">
+    <failure message="Mobile numberis not having 10 digits" type="java.lang.AssertionError">java.lang.AssertionError: Mobile numberis not having 10 digits
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.VerifyNumber(BaseTest.java:353)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:40)
+</failure>
+    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
+https://www.nobroker.in/
+</system-out>
+    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 17938
+Only local connections are allowed.
+</system-err>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="38.98"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="25.815">
+    <failure message="Mobile numberis not of an integer" type="java.lang.AssertionError">java.lang.AssertionError: Mobile numberis not of an integer
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.VerifyNumber(BaseTest.java:361)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:40)
+</failure>
+    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
+https://www.nobroker.in/
+java.lang.NumberFormatException: For input string: &quot;aaaaa&quot;
+</system-out>
+    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 17129
+Only local connections are allowed.
+</system-err>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="7.62">
+    <failure message="BHK type not found" type="java.lang.AssertionError">java.lang.AssertionError: BHK type not found
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.selectBHK(BaseTest.java:306)
+	at com.core.ddf.NoBroker.BaseTest.searchResult(BaseTest.java:262)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:35)
+</failure>
+    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
+https://www.nobroker.in/
+</system-out>
+    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 13966
+Only local connections are allowed.
+</system-err>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="0">
-    <skipped/>
-  </testcase>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="37.656"/>
+  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="38.398"/>
 </testsuite>

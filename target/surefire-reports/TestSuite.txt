@@ -1,11 +1,41 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 117.368 sec <<< FAILURE!
-search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 56.63 sec  <<< FAILURE!
+Tests run: 13, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 434.498 sec <<< FAILURE!
+search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 33.299 sec  <<< FAILURE!
 java.lang.AssertionError: Password aa is wrong
 	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:169)
-	at com.core.ddf.NoBroker.BaseTest.VerifyPassword(BaseTest.java:358)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.VerifyPassword(BaseTest.java:371)
 	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:51)
+
+search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 7.556 sec  <<< FAILURE!
+java.lang.AssertionError: City not found Jaipur
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.selectCity(BaseTest.java:247)
+	at com.core.ddf.NoBroker.BaseTest.searchResult(BaseTest.java:261)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:35)
+
+search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 25.929 sec  <<< FAILURE!
+java.lang.AssertionError: Mobile numberis not having 10 digits
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.VerifyNumber(BaseTest.java:353)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:40)
+
+search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 25.815 sec  <<< FAILURE!
+java.lang.AssertionError: Mobile numberis not of an integer
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.VerifyNumber(BaseTest.java:361)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:40)
+
+search(com.core.ddf.NoBroker.testcases.selectplanTest)  Time elapsed: 7.62 sec  <<< FAILURE!
+java.lang.AssertionError: BHK type not found
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
+	at com.core.ddf.NoBroker.BaseTest.selectBHK(BaseTest.java:306)
+	at com.core.ddf.NoBroker.BaseTest.searchResult(BaseTest.java:262)
+	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:35)
 

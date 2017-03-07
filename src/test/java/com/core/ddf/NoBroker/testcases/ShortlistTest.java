@@ -16,8 +16,8 @@ package com.core.ddf.NoBroker.testcases;
 	import com.core.ddf.NoBroker.Xls_Reader;
 	import com.relevantcodes.extentreports.LogStatus;
 
-	public class Shortlist  extends BaseTest {
-		String testCaseName="Shortlist";
+	public class ShortlistTest  extends BaseTest {
+		String testCaseName="ShortlistTest";
 		SoftAssert softAssert;
 		Xls_Reader xls;
 		
@@ -33,11 +33,17 @@ package com.core.ddf.NoBroker.testcases;
 			openBrowser(data.get("Browser"));
 		    searchResult(data.get("city"),data.get("bhk"),data.get("location"));
 		    takeScreenShot();
+		    wait(2);
 		    click("shortlistbutton_xpath");
+		    wait(2);
 		    type("contactnumber_xpath",data.get("number"));
+		    wait(2);
 			click("nextbutton1_xpath");
+			wait(4);
 			click("radiobutton_xpath");
+			wait(2);
 			type("password_xpath",data.get("password"));
+			wait(2);
 			click("nextbutton2_xpath");
 			wait(2);
 			takeScreenShot();
