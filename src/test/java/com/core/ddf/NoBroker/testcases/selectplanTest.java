@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import org.testng.annotations.Parameters;
+
 
 import com.core.ddf.NoBroker.BaseTest;
 import com.core.ddf.NoBroker.DataUtil;
@@ -21,6 +23,7 @@ public class selectplanTest extends BaseTest {
 	SoftAssert softAssert;
 	Xls_Reader xls;
 	
+	
 	@Test(dataProvider="getData")
 	public void search(Hashtable<String,String> data) throws IOException
 	{
@@ -31,6 +34,8 @@ public class selectplanTest extends BaseTest {
 			test.log(LogStatus.SKIP, "Skipping the test as runmode is N");
 			throw new SkipException("Skipping the test as runmode is N");
 		}
+		
+		
 		openBrowser(data.get("Browser"));
 		navigate("appurl");
 		searchResult(data.get("city"),data.get("bhk"),data.get("location"));
@@ -99,6 +104,7 @@ public class selectplanTest extends BaseTest {
 	@DataProvider
 	public Object[][] getData(){
 		super.init();
+		String browser="Mozilla";
 		xls = new Xls_Reader(prop.getProperty("xlspath"));
 		Object[][] data= DataUtil.getTestData(xls, testCaseName);
 		return data;

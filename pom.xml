@@ -17,15 +17,10 @@
 			<configuration>
 				<suiteXmlFiles>
 				<!-- TestNG suite XML files -->
-					<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					<suiteXmlFile>testng.xml</suiteXmlFile>
 					
 				</suiteXmlFiles>
-				<properties>
-                        <property>
-                          <name>testnames</name>
-                          <value>${testNames}</value>
-                        </property>
-             </properties>
+				
 			</configuration>
 	</plugin>
 	</plugins>

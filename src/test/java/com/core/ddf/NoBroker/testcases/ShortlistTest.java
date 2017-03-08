@@ -10,13 +10,14 @@ import org.testng.SkipException;
     import org.testng.annotations.AfterMethod;
 	import org.testng.annotations.BeforeMethod;
 	import org.testng.annotations.DataProvider;
-	import org.testng.annotations.Test;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 	import org.testng.asserts.SoftAssert;
 
-	import com.core.ddf.NoBroker.BaseTest;
-	import com.core.ddf.NoBroker.DataUtil;
-	import com.core.ddf.NoBroker.Xls_Reader;
-	import com.relevantcodes.extentreports.LogStatus;
+import com.core.ddf.NoBroker.BaseTest;
+import com.core.ddf.NoBroker.DataUtil;
+import com.core.ddf.NoBroker.Xls_Reader;
+import com.relevantcodes.extentreports.LogStatus;
 
 	public class ShortlistTest  extends BaseTest {
 		String testCaseName="ShortlistTest";
@@ -32,6 +33,7 @@ import org.testng.SkipException;
 				test.log(LogStatus.SKIP, "Skipping the test as runmode is N");
 				throw new SkipException("Skipping the test as runmode is N");
 			}
+			
 			
 			openBrowser(data.get("Browser"));
 			navigate("appurl");
@@ -97,6 +99,7 @@ import org.testng.SkipException;
 		@DataProvider
 		public Object[][] getData(){
 			super.init();
+			
 			xls = new Xls_Reader(prop.getProperty("xlspath"));
 			Object[][] data= DataUtil.getTestData(xls, testCaseName);
 			return data;
