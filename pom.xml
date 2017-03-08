@@ -18,7 +18,7 @@
 				<suiteXmlFiles>
 				<!-- TestNG suite XML files -->
 					<suiteXmlFile>testng.xml</suiteXmlFile>
-					<suiteXmlFile>testng2.xml</suiteXmlFile>
+					
 				</suiteXmlFiles>
 			</configuration>
 	</plugin>

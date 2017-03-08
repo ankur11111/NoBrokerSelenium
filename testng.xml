@@ -6,4 +6,10 @@
 		</classes>
 	</test>
 	
+	<test name="ShortlistTest" allow-return-values="true">
+		<classes>
+			<class name="com.core.ddf.NoBroker.testcases.ShortlistTest" />
+		</classes>
+	</test>
+	
 </suite>
