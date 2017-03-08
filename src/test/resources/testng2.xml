@@ -1,0 +1,9 @@
+<suite name="SuiteName1">
+
+<test name="selectplanTest" allow-return-values="true">
+		<classes>
+			<class name="com.core.ddf.NoBroker.testcases.selectplanTest" />
+		</classes>
+	</test>
+	
+</suite>
