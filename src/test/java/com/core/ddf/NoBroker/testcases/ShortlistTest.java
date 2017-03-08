@@ -4,7 +4,9 @@ package com.core.ddf.NoBroker.testcases;
 	import java.io.IOException;
 	import java.util.Hashtable;
 
-	import org.testng.SkipException;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.SkipException;
     import org.testng.annotations.AfterMethod;
 	import org.testng.annotations.BeforeMethod;
 	import org.testng.annotations.DataProvider;
@@ -30,8 +32,10 @@ package com.core.ddf.NoBroker.testcases;
 				test.log(LogStatus.SKIP, "Skipping the test as runmode is N");
 				throw new SkipException("Skipping the test as runmode is N");
 			}
+			
 			openBrowser(data.get("Browser"));
-		    searchResult(data.get("city"),data.get("bhk"),data.get("location"));
+			navigate("appurl");
+			searchResult(data.get("city"),data.get("bhk"),data.get("location"));
 		    takeScreenShot();
 		    wait(2);
 		    click("shortlistbutton_xpath");
@@ -46,10 +50,26 @@ package com.core.ddf.NoBroker.testcases;
 			wait(2);
 			click("nextbutton2_xpath");
 			wait(2);
-			takeScreenShot();
-		    wait(2);
-		    click("shortlistbutton_xpath");
-		    takeScreenShot();
+			doLogin(data.get("number"),data.get("password"));
+			hoverandSelectDashboard("mainelement","subelement");
+			click("shortlistTab_xpath");
+			wait(2);
+			String Shortlistcountbefore = getElement("shortlistedcount_xpath").getText();
+			click("shortlisttabnextpage_xpath");
+			wait(2);
+			click("removeshortlist_xpath");
+			wait(2);
+			String Shortlistcountafter = getElement("shortlistedcount_xpath").getText();
+			if (Shortlistcountbefore.equalsIgnoreCase(Shortlistcountafter))
+			{
+				reportFailure("Shortlist Test Failed");
+				Assert.fail("Shortlist Test Failed");
+			}
+			else
+			{
+				reportPass("Shortlist Test Passed");
+				takeScreenShot();
+			}
 		
 		}
 		

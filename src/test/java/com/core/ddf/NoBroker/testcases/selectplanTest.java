@@ -32,6 +32,7 @@ public class selectplanTest extends BaseTest {
 			throw new SkipException("Skipping the test as runmode is N");
 		}
 		openBrowser(data.get("Browser"));
+		navigate("appurl");
 		searchResult(data.get("city"),data.get("bhk"),data.get("location"));
 	   	takeScreenShot();
 		wait(2);
@@ -42,9 +43,9 @@ public class selectplanTest extends BaseTest {
 		wait(2);
 		click("radiobutton_xpath");
 		wait(2);
-		//System.out.println("-->>"+driver.findElement(By.xpath("//div[@class='errorMsgText']")).getAttribute("innerText"));
+		
 		type("password_xpath",data.get("password"));
-		//VerifyPassword(data.get("password"));
+	
 		wait(2);
 		click("nextbutton2_xpath");
 		wait(2);
@@ -53,7 +54,7 @@ public class selectplanTest extends BaseTest {
 		//System.out.println("-->>"+driver.findElement(By.xpath("//*[@id='checkMobileNumber']/div[2]/fieldset[3]/div/div[1]")).getText());
 		click("paynowbutton_xpath");
 		waitForPageToLoad();
-		if(isElementPresent("orderdetails_xpath")){
+		if(isElementPresent("paytm_xpath")){
 			test.log(LogStatus.INFO, "Payment Success");
 		
 		}
@@ -62,8 +63,8 @@ public class selectplanTest extends BaseTest {
 			
 		}
 		
-		String actualResult=getElement("orderdetails_xpath").getText();
-		String expectedResult="ORDER DETAILS";
+		String actualResult=getElement("paytm_xpath").getAttribute("title");
+		String expectedResult="Paytm Payments";
 		
 		
 		if (actualResult.equalsIgnoreCase(expectedResult))

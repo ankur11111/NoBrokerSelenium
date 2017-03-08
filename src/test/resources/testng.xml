@@ -1,4 +1,4 @@
-<suite name="SuiteName" parallel="tests">
+<suite name="SuiteName">
 	
 	<test name="ShortlistTest" allow-return-values="true">
 		<classes>
@@ -6,12 +6,15 @@
 		</classes>
 	</test>
 	
-	<test name="selectplanTest" allow-return-values="true">
+		
+</suite>
+
+<suite name="Mozilla">
+
+<test name="selectplanTest" allow-return-values="true">
 		<classes>
 			<class name="com.core.ddf.NoBroker.testcases.selectplanTest" />
 		</classes>
 	</test>
 	
-		
-</suite>
-
+</suite>	
