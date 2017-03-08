@@ -13,6 +13,7 @@
       <class name="com.core.ddf.NoBroker.testcases.ShortlistTest">
         <methods>
           <include name="init"/>
+          <include name="addremoveShortlist" invocation-numbers="1"/>
           <include name="repoquit"/>
         </methods>
       </class> <!-- com.core.ddf.NoBroker.testcases.ShortlistTest -->

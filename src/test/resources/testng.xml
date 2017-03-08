@@ -9,7 +9,7 @@
 		
 </suite>
 
-<suite name="Mozilla">
+<suite name="SuiteName1">
 
 <test name="selectplanTest" allow-return-values="true">
 		<classes>
