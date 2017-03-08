@@ -219,6 +219,13 @@ public class BaseTest
 	}
 
 	
+	public void ExplicitwaitTillLocator(String LocatorKey){
+		
+             WebDriverWait wait=new WebDriverWait(driver,30);
+             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(prop.getProperty(LocatorKey))));
+
+	}
+	
 	/************************App functions*****************************/
 
 	public void selectCity(String city)
@@ -256,7 +263,7 @@ public class BaseTest
 	{
 	    
 		test.log(LogStatus.INFO, "Opened the browser");
-		navigate("appurl");
+		
 		
 		selectCity(city);
 		selectBHK(bhk);
@@ -372,7 +379,18 @@ public class BaseTest
 			Assert.fail("Password "+password+" is wrong");
 		}
 	}
-	
+    
+	 public void doLogin(String number, String password)
+	 {
+		    wait(2);
+		    click("signinbutton_xpath");
+			ExplicitwaitTillLocator("loginpassword_xpath");
+			type("loginusername_xpath",number);
+			type("loginpassword_xpath",password);
+			click("loginbutton_xpath");
+	 }
+	 
+	 
 	
 	
 }
