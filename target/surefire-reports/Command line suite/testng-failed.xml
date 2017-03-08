@@ -7,13 +7,13 @@
         <methods>
           <include name="repoquit"/>
           <include name="init"/>
-          <include name="search" invocation-numbers="2 4 5 7 8"/>
+          <include name="search" invocation-numbers="1 2 3 4 5 6 7 8 9 10"/>
         </methods>
       </class> <!-- com.core.ddf.NoBroker.testcases.selectplanTest -->
       <class name="com.core.ddf.NoBroker.testcases.ShortlistTest">
         <methods>
           <include name="init"/>
-          <include name="addremoveShortlist" invocation-numbers="1"/>
+          <include name="addremoveShortlist" invocation-numbers="1 2 3"/>
           <include name="repoquit"/>
         </methods>
       </class> <!-- com.core.ddf.NoBroker.testcases.ShortlistTest -->

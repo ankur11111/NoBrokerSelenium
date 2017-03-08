@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="6" name="TestSuite" time="710.567" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="104.038" tests="15" errors="0" skipped="13" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
@@ -22,12 +22,11 @@
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\ankur\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\ankur\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8465519546878177281.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\ankur\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8185379149585920821.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_121/jre/bin/server;C:/Program Files/Java/jdk1.8.0_121/jre/bin;C:/Program Files/Java/jdk1.8.0_121/jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\ankur\AppData\Local\Microsoft\WindowsApps;C:\Users\ankur\AppData\Roaming\npm;C:\WINDOWS\System32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,121 +60,45 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.core.ddf.NoBroker.testcases.ShortlistTest" name="addremoveShortlist" time="62.005"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.ShortlistTest" name="addremoveShortlist" time="72.834">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;user_summary_detail_container&apos;]/div[1]/i&quot;}
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;Ankur&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\ankur\AppData\Local\Temp\scoped_dir8772_6189}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: fc8fc23d2ead98d07669f614f69b582a
-*** Element info: {Using=xpath, value=//*[@id=&apos;user_summary_detail_container&apos;]/div[1]/i}" type="java.lang.AssertionError">java.lang.AssertionError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;user_summary_detail_container&apos;]/div[1]/i&quot;}
-  (Session info: chrome=56.0.2924.87)
-  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;Ankur&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\ankur\AppData\Local\Temp\scoped_dir8772_6189}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: fc8fc23d2ead98d07669f614f69b582a
-*** Element info: {Using=xpath, value=//*[@id=&apos;user_summary_detail_container&apos;]/div[1]/i}
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
-	at com.core.ddf.NoBroker.BaseTest.getElement(BaseTest.java:135)
-	at com.core.ddf.NoBroker.BaseTest.click(BaseTest.java:105)
-	at com.core.ddf.NoBroker.testcases.ShortlistTest.addremoveShortlist(ShortlistTest.java:59)
-</failure>
-    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
-https://www.nobroker.in/
-</system-out>
-    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 37842
-Only local connections are allowed.
-</system-err>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="40.847"/>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.ShortlistTest" name="addremoveShortlist" time="61.352"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.ShortlistTest" name="addremoveShortlist" time="63.645"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="47.56"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="52.652"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="37.917">
-    <failure message="Password aa is wrong" type="java.lang.AssertionError">java.lang.AssertionError: Password aa is wrong
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
-	at com.core.ddf.NoBroker.BaseTest.VerifyPassword(BaseTest.java:378)
-	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:52)
-</failure>
-    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
-https://www.nobroker.in/
-</system-out>
-    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 48639
-Only local connections are allowed.
-</system-err>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="46.983"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="9.906">
-    <failure message="City not found Jaipur" type="java.lang.AssertionError">java.lang.AssertionError: City not found Jaipur
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
-	at com.core.ddf.NoBroker.BaseTest.selectCity(BaseTest.java:254)
-	at com.core.ddf.NoBroker.BaseTest.searchResult(BaseTest.java:268)
-	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:36)
-</failure>
-    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
-https://www.nobroker.in/
-</system-out>
-    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 36834
-Only local connections are allowed.
-</system-err>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="31.327">
-    <failure message="Mobile numberis not having 10 digits" type="java.lang.AssertionError">java.lang.AssertionError: Mobile numberis not having 10 digits
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
-	at com.core.ddf.NoBroker.BaseTest.VerifyNumber(BaseTest.java:360)
-	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:41)
-</failure>
-    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
-https://www.nobroker.in/
-</system-out>
-    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 33726
-Only local connections are allowed.
-</system-err>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="60.673"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="36.124">
-    <failure message="Mobile numberis not of an integer" type="java.lang.AssertionError">java.lang.AssertionError: Mobile numberis not of an integer
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
-	at com.core.ddf.NoBroker.BaseTest.VerifyNumber(BaseTest.java:368)
-	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:41)
-</failure>
-    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
-https://www.nobroker.in/
-java.lang.NumberFormatException: For input string: &quot;aaaaa&quot;
-</system-out>
-    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 8044
-Only local connections are allowed.
-</system-err>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="15.967">
-    <failure message="BHK type not found" type="java.lang.AssertionError">java.lang.AssertionError: BHK type not found
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.core.ddf.NoBroker.BaseTest.reportFailure(BaseTest.java:181)
-	at com.core.ddf.NoBroker.BaseTest.selectBHK(BaseTest.java:313)
-	at com.core.ddf.NoBroker.BaseTest.searchResult(BaseTest.java:269)
-	at com.core.ddf.NoBroker.testcases.selectplanTest.search(selectplanTest.java:36)
-</failure>
-    <system-out>C:\Users\ankur\Desktop\Export\selenium\chromedriver_win32\chromedriver.exe
-https://www.nobroker.in/
-</system-out>
-    <system-err>Starting ChromeDriver 2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9) on port 24225
-Only local connections are allowed.
-</system-err>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
   </testcase>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="58.942"/>
-  <testcase classname="com.core.ddf.NoBroker.testcases.selectplanTest" name="search" time="52.68"/>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
+  <testcase name="search" classname="com.core.ddf.NoBroker.testcases.selectplanTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
+  <testcase name="addremoveShortlist" classname="com.core.ddf.NoBroker.testcases.ShortlistTest" time="56.966"/>
+  <testcase name="addremoveShortlist" classname="com.core.ddf.NoBroker.testcases.ShortlistTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
+  <testcase name="addremoveShortlist" classname="com.core.ddf.NoBroker.testcases.ShortlistTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
+  <testcase name="addremoveShortlist" classname="com.core.ddf.NoBroker.testcases.ShortlistTest" time="0">
+    <skipped message="Skipping the test as runmode is N"/>
+  </testcase>
 </testsuite>
