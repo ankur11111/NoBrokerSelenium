@@ -45,7 +45,7 @@ public class selectplanTest extends BaseTest {
 		type("contactnumber_xpath",data.get("number"));
 		VerifyNumber(data.get("number"));
 		click("nextbutton1_xpath");
-		wait(2);
+		ExplicitwaitTillLocator("radiobutton_xpath");
 		click("radiobutton_xpath");
 		wait(2);
 		
